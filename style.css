@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 120px 90px 400px 100px;
+    grid-template-areas: 
+    "semantic semantic semantic"
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+}
+
+ h1 { 
+    grid-area: semantic;
+    text-align: center;
+    padding-top: 15PX;
+} 
+
+.header {
+    grid-area: header;
+    background: rgb(212, 77, 99);
+}
+
+.nav {
+    grid-area: nav;
+    background: rgb(69, 205, 69);
+}
+
+.aside {
+    grid-area: aside;
+    background: rgb(222, 156, 103);
+}
+
+.main {
+    padding: 40px 10px 10px 10px;
+    grid-area: main;
+    background: rgb(194, 194, 220);
+    color: black;
+
+}
+
+.article {
+    padding: 40px 10px 10px 10px;
+    grid-area: article;
+    background: rgb(114, 180, 216);
+    gap: 10px;
+    
+}
+
+.figure {
+    grid-area: figure;
+    background: rgb(234, 234, 94);
+    
+}
+
+.p {
+    grid-area: p;
+    background: rgb(157, 237, 59);
+    
+}
+
+.section {
+    grid-area: section;
+    background: rgb(233, 121, 17);
+    
+}
+
+.footer {
+    grid-area: footer;
+    background: rgb(237, 28, 237);
+    
+}
+
+.header,
+.nav,
+.aside,
+.main,
+.article,
+.figure,
+.p,
+.section,
+.footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: black;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
